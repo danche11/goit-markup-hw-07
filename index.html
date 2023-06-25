@@ -15,26 +15,64 @@
 </head>
 
 <body>
-  <!-- NAVIGATION -->
-
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
       <nav class="header-nav">
         <a href="./index.html" class="header-logo-web link"> Web <span class="header-logo-studio">Studio</span>
         </a>
         <ul class="header-nav-list list">
-          <li><a class="header-nav-item current link" href="./index.html">Studio</a></li>
-          <li><a class="header-nav-item link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="header-nav-item link" href="">Contacts</a></li>
+          <li class="header-nav-content"><a class="header-nav-item current-content current link"
+              href="./index.html">Studio</a></li>
+          <li class="header-nav-content"><a class="header-nav-item link" href="./portfolio.html">Portfolio</a></li>
+          <li class="header-nav-content"><a class="header-nav-item link" href="">Contacts</a></li>
         </ul>
       </nav>
+
       <address class="header-address">
         <ul class="header-address-list list">
-          <li><a href="mailto:info@devstudio.com" class="header-address-item link">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111" class="header-address-item link">+11 (000) 111-11-11</a></li>
+          <li class="address-item"><a href="mailto:info@devstudio.com"
+              class="header-address-item link">info@devstudio.com</a></li>
+          <li class="address-item"><a href="tel:+110001111111" class="header-address-item link">+11 (000) 111-11-11</a>
+          </li>
         </ul>
       </address>
+
+
+      <button type="button" class="mobile-menu-open is-open js-open-menu">
+        <svg class="menu-open-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-hamburger">
+        </svg>
+      </button>
     </div>
+
+
+    <!---------------- MOBILE MENU HEADER -------------------->
+
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="mobile-menu-close js-close-menu">
+        <svg class="menu-close-icon" width="8px" height="8">
+          <use href="./images/icons.svg#icon-close-button">
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li><a class="mobile-menu-link link current" href="./index.html">Studio</a></li>
+        <li><a class="mobile-menu-link link" href="./index.html">Portfolio</a></li>
+        <li><a class="mobile-menu-link link" href="./index.html">Contacts</a></li>
+      </ul>
+
+      <address>
+        <ul class="mobile-menu-address-list list">
+          <li><a class="mobile-menu-address-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+        <ul class="mobile-menu-address-list list">
+          <li><a class="mobile-menu-address-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+      </address>
+
+    </div>
+
   </header>
   <!-- MAIN -->
 
@@ -119,7 +157,7 @@
     <!-- Section 4 -->
 
     <section class="team">
-      <div class="container">
+      <div class="container team-container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list list">
 
@@ -281,7 +319,7 @@
     <!-- CUSTOMERS -->
 
     <section class="customers">
-      <div class="container">
+      <div class="container customers-container">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-list list">
           <li class="customers-item">
@@ -480,6 +518,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 
