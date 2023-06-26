@@ -314,6 +314,13 @@ body {
   color: var(--hover-link-color);
 }
 
+.mobile-menu-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 56px;
+}
+
 
 
 
@@ -412,7 +419,7 @@ body {
 }
 
 .features-content {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .features-item {
@@ -621,10 +628,10 @@ body {
 }
 
 .footer-webstudio-content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 
@@ -704,7 +711,7 @@ body {
 }
 
 .footer-email-container {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .footer-email-title {
@@ -723,19 +730,20 @@ body {
 }
 
 .footer-form-input {
+  display: flex;
+  align-items: center;
   width: 264px;
   height: 40px;
-  padding: 8px 16px 8px 16px;
-  border-radius: 4px;
-  outline: none;
-  background-color: transparent;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .footer-button-form {
@@ -1274,10 +1282,6 @@ body {
     display: none;
   }
 
-  .specialty {
-    display: none;
-  }
-
   .header-logo-web {
     margin-right: 120px;
   }
@@ -1302,7 +1306,7 @@ body {
   }
 
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
   }
 
   .hero-title {
@@ -1334,9 +1338,6 @@ body {
     font-weight: 500;
   }
 
-  .features {
-    display: none;
-  }
 
   .team-container {
     max-width: 584px;
@@ -1374,6 +1375,10 @@ body {
   .footer-social-container {
     margin: 0;
   }
+
+  .specialty {
+    display: none;
+  }
 }
 
 
@@ -1401,7 +1406,7 @@ body {
 (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg)
+        rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob@2x.jpg)
   }
 }
 
