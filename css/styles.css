@@ -418,9 +418,7 @@ body {
   margin-bottom: 8px;
 }
 
-.features-content {
-  /* flex-basis: calc((100% - 72px) / 4); */
-}
+
 
 .features-item {
   font-weight: 500;
@@ -705,9 +703,6 @@ body {
   background-color: var(--footer-social-hover-color);
 }
 
-.footer-email-container {
-  /* margin-left: auto; */
-}
 
 .footer-email-title {
   font-weight: 500;
