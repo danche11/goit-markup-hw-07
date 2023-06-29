@@ -1227,10 +1227,6 @@ body {
     gap: 30px;
   }
 
-  .hero-title {
-    font-size: 32px;
-  }
-
   .modal-window {
     width: 320px;
   }
@@ -1410,7 +1406,7 @@ body {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);
     padding-top: 118px;
-    padding-bottom: 118px
+    padding-bottom: 118px;
   }
 
   @media (min-device-pixel-ratio: 2),
